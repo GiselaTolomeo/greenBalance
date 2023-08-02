@@ -15,6 +15,9 @@ a img{
     margin-right: 1rem;
 }
 
+.run{
+    width: 100vw;
+}
 
 h2{
    font-family: 'Kaushan Script', cursive;
@@ -120,6 +123,7 @@ ul{
     margin-top: 2rem;
     height: 40rem;
     width: 78rem;
+    border-radius: 0.4rem;
 }
 
 .btnImc{
