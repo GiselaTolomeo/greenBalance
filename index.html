@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Balance</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat+Alternates&family=Niramit:wght@300&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR CON BOOTSTRAP -->
+    <div class="barra">
+      <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="images/logo.png" height="70" width="70" /> Green
+            Balance</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                GREEN BALANCE
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#quienesSomos">Quiénes somos?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#nutricion">Nutrición</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#fitnessCoaching">Fitness Coaching</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    IMC
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#imc">¿Qué es el IMC?</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#calculaTuImc">Calculá tu IMC</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#planes">Planes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Buscar"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <img src="images/run.jpg" alt="mujer corriendo" />
+    <h2 id="quienesSomos" >Quiénes somos?</h2>
+
+    <div class="texto">
+      <h5>
+        Somos un grupo interdiciplinario de nutrición y entrenamiento dedicados
+        exclusivamente al descenso de peso.
+      </h5>
+      <p></p>
+      <p>
+        Nos encanta la nutrición. Somos personas comprometidas con nuestro
+        trabajo, en constante formación para ofrecer la mejor solución a
+        nuestros pacientes
+      </p>
+      <h3>Cómo trabajamos?</h3>
+      <p>
+        Trabajamos en equipo de forma interdiciplinaria para abordar la
+        problemática de un modo multifocal.
+      </p>
+      <p>
+        Sabemos cual es la importancia de la interdiciplina, que una dieta sin
+        ejercicio, o bien el ejercicio sin dieta, no van a ser soluciones
+        eficientes por si solas, también conocemos la importancia del factor
+        psicológico que trae aparejado el descenso de peso, sobre todo para que
+        éste sea sano y sostenido en el tiempo. Es por ello que decidimos
+        desarrollar este grupo conformado por:
+      </p>
+      <ul>
+        <li>Nutricionistas</li>
+        <li>Fitness Coach</li>
+        <li>Psicólogos</li>
+      </ul>
+      <p>
+        Todos los miembros del equipo compartimos un mismo método de trabajo,
+        garantizando que todos los pacientes reciban el mejor tratamiento
+        posible con cualquiera de nuestros profesionales.
+      </p>
+    </div>
+    <h2 id="nutricion">Nutrición</h2>
+    <h5>
+      La Nutrición es la base fundamental del bienestar: salud física, psíquica,
+      y emocional
+    </h5>
+    <h5>Te paracen pocos motivos para empezar?</h5>
+    <div class="nutricion">
+      <div class="textoNutri">
+        <p>
+          En Green Balance nos enfocamos en un método único e infalible: El NO
+          método
+        </p>
+        <p class="strong">
+          Por qué una misma alimentación para todos si somos diferentes?
+        </p>
+        <p>
+          Por eso nuestro equipo interdiciplinario basa su exito en la
+          personalización de cada plan, no solo en las dietas, -lo cual es
+          clave- si no también en la forma de abordaje y estategias empleadas
+          para cada caso.
+        </p>
+        <p>
+          Porque cada persona es única, en sus gustos, su rutina, sus costumbres
+          y antescedentes.
+        </p>
+        <p>
+          Nos encargamos de buscar la dieta y metodología que mejor se adapte a
+          cada paciente según sus preferencias y personalidad.
+        </p>
+        <p>
+          Siempre apoyandonos en los pilares claves de la interdisciplina,
+          porque entendemos que cuerpo y mente son uno solo, y se hayan
+          íntimamente relacionados para lograr el descenso de peso que tanto
+          anhelan nuestros pacientes.
+        </p>
+        <p>
+          No caigas en las dietas rapidas que jamás funcionan! El descenso de
+          peso es un proceso, que mas hecho empeora los resultados. Las dietas
+          restrictivas no son saludables y tienden a generar el famoso efecto
+          rebote, el que sin dudas aumenta la frustración.
+        </p>
+        <p>
+          Nosotros te enseñamos a comer y a disfrutar de los alimentos
+          sanamente!
+        </p>
+        <p class="strong">Animáte a este cambio de vida!</p>
+        <p class="strong">Nosotros te acompañamos!</p>
+      </div>
+    </div>
+
+    <h2 id="fitnessCoaching">Fitness Coaching</h2>
+    <div class="textoCoach">
+      <h5>¿Es mejor hacer ejercicio o dieta para perder peso?</h5>
+      <h5>Sin dudas la respuesta es: realizar ambas!</h5>
+      <p>
+        Si bien es una realidad que se puede bajar de peso con dieta y sin
+        realizar ejercicio y no a la inversa, por una cuestión lógica, lo cierto
+        es que la sinergia de ambos pilares es la mejor de las opciones, no solo
+        en cuanto al descenso de peso sino en cuanto a la salud, e incluso en el
+        estado mental y motivacional
+      </p>
+      <p>
+        Esta comprobado que al realizarse ambas en conjunto el descenso se
+        genera mucho mas rápido y de forma mas sostenida. Además las personas
+        que buscan bajar de peso suelen encontrar en los espacios de actividad
+        fisica sean gimnasios, boxes o clubles con personas que estan en su
+        misma situación, o bien personas que logran inspirar los objetivos
+        planteados
+      </p>
+      <p>
+        Después de todo somos seres sociales y el contacto con personas con un
+        estilo de vida similar al que queremos adquirir genera mas posibilidades
+        de adhesión y disfrute.
+      </p>
+      <p>
+        En Green Balance contamos con profesionales del fitness, con años de
+        experiencia que buscarán adaptar la rutina de ejercicios a las
+        preferencias y capacidades de cada paciente.
+      </p>
+      <img class="imgCoach" src="images/coach.jpg" alt="hombre corriendo" />
+      <p>
+        Siempre en interdiciplina con el resto de los profesionales,
+        nutricionistas y psicólogos en su caso, para mejorar la adhesión del
+        paciente y lograr que se forme no solo un hábito, sino una linea de
+        estilo de vida, que sea elegido por el paciente, incluso luego de
+        alcanzar el objetivo de peso, lo que evitará las recaidas a futuro
+      </p>
+      <p class="strong">
+        Tenés ganas de iniciar un nuevo estilo de vida que acompañe tus
+        objetivos estéticos y de salud?
+      </p>
+      <p class="strong">
+        Nosotros te ayudamos a crear el cuerpo que siempre soñaste!
+      </p>
+    </div>
+    <h2 id="imc">IMC</h2>
+    <h3>Qué es el IMC?</h3>
+    <div class="imc">
+      <p>
+        La obesidad y el sobrepeso se definen como una acumulación anormal o
+        excesiva de grasa que puede ser perjudicial para la salud según la OMS.
+      </p>
+      <p>
+        Una forma simple de medir la obesidad es el índice de masa corporal
+        (IMC)
+      </p>
+
+      <p>
+        Para la mayoría de las personas, el IMC es un indicador confiable de
+        obesidad y se usa para identificar las categorías de peso que pueden
+        llevar a problemas de salud.
+      </p>
+
+      <p>
+        Sin perjuicio de ello, el IMC tiene sus limitaciones, y si bien en la
+        mayoria de los casos es un indicador preciso de la salud, en algunos
+        casos puede que no lo sea tanto porque no se tiene en cuenta el
+        porcentaje ni la distribución de la grasa corporal
+      </p>
+
+      <p>
+        Es por ello que se lo toma como un indicador más que se evalua con el
+        resto de los indicadores y la opinión profesional.
+      </p>
+
+      <p>
+        Teniendo en claro esto, te invitamos a cacular tu Indice de Masa
+        Corporal.
+      </p>
+
+      <h3 id="calculaTuImc">Calculá tu IMC</h3>
+
+      <p>Para realizar este calculo debes tener en cuenta:</p>
+
+      <ul>
+        <li>El sexo es indiferente para el cálculo.</li>
+        <li>
+          Se recomienda su uso a partir de los 2 años de edad según la Academia
+          Americana de Pediatria (AAP)
+        </li>
+        <li>
+          Es solo un inidicador que deberá ser evaluado por el profesional en
+          conjunto con otros indicadores.
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <!-- Aqui va la calculadora de IMC -->
+      <button class="btnImc" id="botonImc">Calcular IMC</button>
+    </div>
+    <h4>Recuerde que el IMC no tiene en cuenta la musculatura, ni tampoco los estadios especiales biológicos como la adolescencia y el embarazo.</h4>
+
+    <h2 id="planes">Nuestros Planes</h2>
+
+    <h5>
+      Aquí podras encontrar las distintas opciones de acompañamiento
+      nutricional. Elegí la que mejor se adapte a vos:
+    </h5>
+
+    <div id="misprods">
+      <!-- Aqui renderización productos -->
+    </div>
+
+    <h4>Tu carrito:</h4>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Plan elegido</th>
+          <th>Eliminar item</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody id="tablabody">
+        <!-- Aqui renderizo los productos cargados en el carrito -->
+      </tbody>
+    </table>
+
+    <div class="misprods">
+      <!-- Aqui renderización productos -->
+    </div>
+
+    <h4 id="total">Total a pagar:</h4>
+    <button id="fin" class="finalizar">Finalizar Compra</button>
+
+    <h4 id="cotizacion"></h4>
+
+    <h2 id="contacto">Contactanos</h2>
+    <h5>Comunicate con nuestros asesores para mas información:</h5>
+    <a
+      href="https://wa.me/542235799452?text=Hola%2C+estoy+interesado+en+los+planes+de+nutrici%C3%B3n.+Quisiera+obtener+mas+informaci%C3%B3n+por+favor%21">
+      <img
+        class="wp"
+        src="images/wp.png"
+        alt="logo de whatsapp"
+        height="50"
+        width="50"
+    /></a>
+    <hr>
+    <footer>
+      <p class="foot" >DESARROLLADO POR GMT DEVELOPER</p>
+      <p class="foot">  Copyright © 2023 Green Balance S.A</p>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="productos.js"></script>
+    <script src="page.js"></script>
+  </body>
+</html>
