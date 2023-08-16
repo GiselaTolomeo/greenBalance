@@ -1,158 +1,193 @@
 
+/* ESTILOS GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 70%;
+}
+
 body{
     font-family: 'Rubik', sans-serif; 
 }
 
+.fuente-general{
+    margin: 2vw 5vw;
+    padding: .5rem;
+    text-align: justify;
+    color: black;
+    font-size: clamp(1.2rem, 1.7vw, 2.5rem);
+}
+
+.listas{
+    font-weight: bolder;
+    list-style: none;
+    font-size: clamp(1.1rem, 1.8vw, 3rem);
+    margin-left: 5rem;
+    color: black;
+}
+
+/* NAVBAR */
 .container-fluid{
     background-color:white;
+    display: inline-block !important;
 }
 
-.barra{
-   height: 70px;
+.navbar-toggler{
+    display: flex;
+    margin: 1.5vh;
+    float: right;
+    font-size: 1.5vw;
 }
-
 a img{
     margin-right: 1rem;
 }
 
-.run{
-    width: 100vw;
+.img-logo{
+    width: clamp(2.7em, 6vw, 5rem);
+    height: auto; 
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
+.titulo{
+    font-size: clamp(2em, 6vw, 4rem);
+    font-family: 'Kaushan Script', cursive;
+}
+
+/* INICIO */
+.run{
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+/* TITULOS */
 h2{
    font-family: 'Kaushan Script', cursive;
-   margin-top: 3rem;
-   margin-bottom: 3rem;
+   margin-top: 3vh;
+   margin-bottom: 3vh;
    text-align: center;
-   font-size: 3rem;
+   font-size: clamp(2.5em, 6vw, 4rem);
    background-color: rgb(200, 228, 171);
-   padding: 2rem;
+   padding: 2vh;
    width: 100%;
    border-radius: 0.4rem;
 }
 
-.navbar-brand{
-    font-size: 2.7rem;
-    font-family: 'Kaushan Script', cursive;
-    margin-left: 2rem;
+h3{
+    font-weight: bolder;
+    margin: 1.5rem;
+    color:rgb(9, 92, 9);
+    font-size: clamp(2rem, 2vw, 5rem);
 }
 
-#misprods{
-    display: flex;
-    flex-direction:row;
-    justify-content:space-around;
+h4{
+    font-weight: bolder;
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 2rem);
 }
 
-.logo{
-    height: 8rem;
+h5{
+    font-size: clamp(1em, 2vw, 2.8rem);
+    font-weight: bolder;
+    text-align: center;
+    margin: 0.2em 2em 0.2em 2em;
+    padding: 2vw;
+    text-shadow: 0.5px 0.5px 0.5px rgb(165, 165, 165);
 }
 
+
+/* SECCION NUTRICION */
+.container-nutri{
+width: 50rem;
+height: 60rem;
+overflow: hidden;
+position: relative;
+}
+
+.container img{
+    width: 100%;
+    height: 100%;
+}
+
+/* IMAGENES */
+.img-nutri{
+    margin:auto;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    display: block;
+    width: 75%;
+    height: auto
+}
+
+.imgCoach{
+    margin:auto;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    display: block;
+    width: 75%;
+    height: auto
+}
+
+/* SECCION IMC */
+.imc{
+    font-size: clamp(1rem, 1.6vw, 3rem);
+    padding: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    text-align: justify;
+}
+
+
+/* CARDS PRODUCTOS  */
 .borrar{
     border-radius: 0.4rem;
 }
 
-.texto{
-    margin: 2rem;
-    color: black;
-    font-size: 1.5rem;
-}
-
-h3{
-    font-weight: bolder;
-    margin: 2rem;
-    color:rgb(9, 92, 9);
-}
-h4{
-    margin: 1.5rem;
-    font-weight: bolder;
+.tabla-general{
+    font-size: clamp(1rem, 1.5vw, 2.8rem);
     text-align: center;
-    font-size: 1.5rem;
-}
-h5{
-    font-size: 1.8rem;
-    font-weight: bolder;
-    text-align: center;
-    margin: 2rem;
-    text-shadow: 1px 1px 1px grey;
 }
 
-ul{
-    list-style-image: url("images/check_verde.svg");
-    font-weight: bolder;
-}
-
-.strong{
-    font-weight: bolder;
-}
-
-.nutricion{
-    height: 91rem;
-    background-image: url(images/nutricion.jpg);
-}
-
-.textoNutri{
-    width: 35rem;
-    display: flex;
-    flex-direction: column;
-    margin-left: 58%;
-    text-align: justify;
-    font-size: 1.5rem;
-    padding: 2rem;
-}
-.strong{
-    font-weight: 900;
-    font-style: italic;
-    color: black;
-}
-.textoCoach{
-    font-size: 1.5rem;
-    padding: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    text-align: justify;
-}
-.imc{
-    font-size: 1.5rem;
-    padding: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    text-align: justify;
-}
-.imgCoach{
-    margin-bottom: 3rem;
-    margin-top: 2rem;
-    height: 40rem;
-    width: 78rem;
+/* BOTONES */
+.botones-general{
+    width: 15vw;
+    height: 6vh;
+    margin: 3rem;
+    font-size: clamp(1rem, 1.6vw, 3rem);
+    color: white;
+    background-color: rgb(3, 126, 240);
     border-radius: 0.4rem;
-}
-
-.btnImc{
-    border-radius: 0.4rem;
-    border-color: rgb(200, 228, 171);
-    margin-right: 57%;
-    margin-left: 43%;
-    margin-bottom: 1.8rem;
-    padding: 0.3rem;
+    border-color:  rgb(3, 126, 240);
     box-shadow: 2px 2px 2px grey;
-    background-color: rgb(200, 228, 171);
-    width: 12rem;
-    height: 3rem;
-    font-weight: 900;
-    color: rgb(4, 3, 3);
-    font-size: 1.5rem;
 }
 
-.btnImc:hover{
-    border: 3px black solid;
-    border-radius: 0.4rem;
-    transform: scale(1.1);
+.contenedor-btn{
+    text-align: center;
+}
+
+.btn .botones-general{
+    box-shadow: 2px 2px 2px grey;
+}
+
+.botones-general:hover{
+    transform: scale(0.9);
     transition: 0.5s;
+    background-color: rgb(3, 126, 240);  
 }
 
+/* CONTACTO Y FOOTER*/
 .wp{
-    margin-left: 50%;
-    margin-right: 50%;
-    margin-bottom: 2rem;
+    margin: auto;
+    margin-bottom: 3vh;
+    display: block;
+    width: 4%;
+    height: auto
 }
 
 .wp:hover{
@@ -161,37 +196,10 @@ ul{
     transform: scale(1.3);
     transition: 0.5s;
 }
-
-.finalizar{
-    margin-left: 45%;
-    margin-right: 55%;
-    border-radius: 0.4rem;
-    border-color:  rgb(3, 126, 240);
-    width: 10rem;
-    height: 2.2rem;
-    box-shadow: 2px 2px 2px grey;
-    color: white;
-    background-color: rgb(3, 126, 240);
-}
-
-.finalizar:hover{
-    transform: scale(1.3);
-    transition: 0.5s;
-}
-
-.btn{
-    box-shadow: 2px 2px 2px grey;
-}
-
-.btn:hover{
-    transform: scale(1.3);
-    transition: 0.5s;
-    background-color: rgb(3, 126, 240);  
-}
-.card-img-top{
-    height: 19rem;
-}
-
 .foot{
     text-align: center;
+    font-size: clamp(1rem, 1vw, 3rem);
 }
+
+
+

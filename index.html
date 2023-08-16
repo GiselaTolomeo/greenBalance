@@ -20,11 +20,11 @@
   <body>
     <!-- NAVBAR CON BOOTSTRAP -->
     <div class="barra">
-      <nav class="navbar bg-light fixed-top">
+      <nav class="navbar bg-light ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
-            ><img src="images/logo.png" height="70" width="70" /> Green
-            Balance</a
+            ><img class="img-logo" src="images/logo.png" height="70" width="70" /> <span class="titulo">Green
+            Balance</span></a
           >
           <button
             class="navbar-toggler"
@@ -110,14 +110,18 @@
         </div>
       </nav>
     </div>
+   
+  <div class="containter-run">
     <img class="run" src="images/run.jpg" alt="mujer corriendo" />
+  </div>
     <h2 id="quienesSomos" >Quiénes somos?</h2>
 
-    <div class="texto">
+    <div>
       <h5>
         Somos un grupo interdiciplinario de nutrición y entrenamiento dedicados
         exclusivamente al descenso de peso.
       </h5>
+      <div class="fuente-general">
       <p></p>
       <p>
         Nos encanta la nutrición. Somos personas comprometidas con nuestro
@@ -137,30 +141,32 @@
         éste sea sano y sostenido en el tiempo. Es por ello que decidimos
         desarrollar este grupo conformado por:
       </p>
-      <ul>
-        <li>Nutricionistas</li>
-        <li>Fitness Coach</li>
-        <li>Psicólogos</li>
+    </div>
+      <ul class="listas">
+        <li> ✅ Nutricionistas</li>
+        <li> ✅ Fitness Coach</li>
+        <li> ✅ Psicólogos</li>
       </ul>
+      <div class="fuente-general">
       <p>
         Todos los miembros del equipo compartimos un mismo método de trabajo,
         garantizando que todos los pacientes reciban el mejor tratamiento
         posible con cualquiera de nuestros profesionales.
       </p>
     </div>
+    
+    </div>
     <h2 id="nutricion">Nutrición</h2>
-    <h5>
-      La Nutrición es la base fundamental del bienestar: salud física, psíquica,
-      y emocional
-    </h5>
-    <h5>Te paracen pocos motivos para empezar?</h5>
-    <div class="nutricion">
-      <div class="textoNutri">
+      <h5>
+        La Nutrición es la base fundamental del bienestar: salud física, psíquica,
+        y emocional</h5>
+      <h5>Te paracen pocos motivos para empezar?</h5>
+      <div class="fuente-general">
         <p>
           En Green Balance nos enfocamos en un método único e infalible: El NO
           método
         </p>
-        <p class="strong">
+        <p>
           Por qué una misma alimentación para todos si somos diferentes?
         </p>
         <p>
@@ -173,6 +179,7 @@
           Porque cada persona es única, en sus gustos, su rutina, sus costumbres
           y antescedentes.
         </p>
+        <img class="img-nutri" src="images/nutri.jpg" alt="Imagen de frutas"></img>
         <p>
           Nos encargamos de buscar la dieta y metodología que mejor se adapte a
           cada paciente según sus preferencias y personalidad.
@@ -193,13 +200,13 @@
           Nosotros te enseñamos a comer y a disfrutar de los alimentos
           sanamente!
         </p>
-        <p class="strong">Animáte a este cambio de vida!</p>
-        <p class="strong">Nosotros te acompañamos!</p>
+        <p>Animáte a este cambio de vida!</p>
+        <p>Nosotros te acompañamos!</p>
       </div>
-    </div>
+  
 
     <h2 id="fitnessCoaching">Fitness Coaching</h2>
-    <div class="textoCoach">
+    <div class="fuente-general">
       <h5>¿Es mejor hacer ejercicio o dieta para perder peso?</h5>
       <h5>Sin dudas la respuesta es: realizar ambas!</h5>
       <p>
@@ -244,8 +251,8 @@
       </p>
     </div>
     <h2 id="imc">IMC</h2>
-    <h3>Qué es el IMC?</h3>
-    <div class="imc">
+    <div class="fuente-general">
+      <h3>Qué es el IMC?</h3>
       <p>
         La obesidad y el sobrepeso se definen como una acumulación anormal o
         excesiva de grasa que puede ser perjudicial para la salud según la OMS.
@@ -280,27 +287,27 @@
 
       <h3 id="calculaTuImc">Calculá tu IMC</h3>
 
-      <p>Para realizar este calculo debes tener en cuenta:</p>
+      <p class="fuente-general">Para realizar este calculo debes tener en cuenta:</p>
 
-      <ul>
-        <li>El sexo es indiferente para el cálculo.</li>
+      <ul class="listas">
+        <li> ✅  El sexo es indiferente para el cálculo.</li>
         <li>
-          Se recomienda su uso a partir de los 2 años de edad según la Academia
+          ✅  Se recomienda su uso a partir de los 2 años de edad según la Academia
           Americana de Pediatria (AAP)
         </li>
         <li>
-          Es solo un inidicador que deberá ser evaluado por el profesional en
-          conjunto con otros indicadores.
+          ✅  Es solo un inidicador que deberá ser evaluado por el profesional en
+          conjunto con otros indicadores como la contextura fisica y ósea.
         </li>
       </ul>
     </div>
 
-    <div>
+    <div class="contenedor-btn">
       <!-- Aqui va la calculadora de IMC -->
-      <button class="btnImc" id="botonImc">Calcular IMC</button>
+      <button class="botones-general" id="botonImc">Calcular</button>
     </div>
-    <h4>Recuerde que el IMC no tiene en cuenta la musculatura, ni tampoco los estadios especiales biológicos como la adolescencia y el embarazo.</h4>
-
+    <p class="listas"> ✔️ Recordá que el IMC no tiene en cuenta la musculatura, ni tampoco los estadíos especiales biológicos como la adolescencia y el embarazo.</p>
+<br>
     <h2 id="planes">Nuestros Planes</h2>
 
     <h5>
@@ -308,11 +315,12 @@
       nutricional. Elegí la que mejor se adapte a vos:
     </h5>
 
-    <div id="misprods">
+    <div id="misprods" class="row">
       <!-- Aqui renderización productos -->
     </div>
 
-    <h4>Tu carrito:</h4>
+    <h3>Tu carrito:</h3>
+    <div class="tabla-general">
     <table class="table table-striped">
       <thead>
         <tr>
@@ -326,14 +334,12 @@
         <!-- Aqui renderizo los productos cargados en el carrito -->
       </tbody>
     </table>
-
-    <div class="misprods">
-      <!-- Aqui renderización productos -->
-    </div>
+  </div>
 
     <h4 id="total">Total a pagar:</h4>
-    <button id="fin" class="finalizar">Finalizar Compra</button>
-
+    <div class="contenedor-btn">
+    <button id="fin" class="botones-general">Finalizar</button>
+   </div>
     <h4 id="cotizacion"></h4>
 
     <h2 id="contacto">Contactanos</h2>

@@ -5,10 +5,10 @@ let contenedor = document.getElementById("misprods");
 function renderizarProductos() {
   for(const producto of productos){
   contenedor.innerHTML+= `
-    <div class="card">
+    <div class= "card col-12 col-md-6 col-lg-3">
         <img src="${producto.foto}" class="card-img-top" alt="imagen producto">
         <div class="card-body">
-            <h5 class="card-title">${producto.nombre}</h5>
+            <h4 class="card-title">${producto.nombre}</h4>
             <h4 class="card-text">UDS ${producto.precio}</h4>
             <button id= "btn${producto.id}" class="btn btn-primary">Comprar</button>
         </div>
@@ -96,11 +96,13 @@ function eliminar (ev) {
     diagnostico = "Obesidad grado I"
   }else if(total > 35 && total < 40){
     diagnostico = "Obesidad grado II"
-  }else if(total <25){
+  }else if(total < 18.5){
     diagnostico = "Bajo Peso"
+  } else if (total < 40){
+    diagnostico = "Obesidad grado III"
   }
   else{
-    diagnostico = "Obesidad grado III"
+    diagnostico = "Lo siento, debe ingresar un peso y talla válidos"
   }
   Swal.fire({
     title: "Resultado de tu IMC",
@@ -110,7 +112,6 @@ function eliminar (ev) {
     imageHeight: 80,
     imageAlt: 'Logo de Green Garden'
   })
- 
  }
 
  // Evento boton de finalizar compra:
