@@ -88,6 +88,7 @@ function eliminar (ev) {
   peso = parseFloat(prompt("Ingese su peso en kiligramos"))
   talla = parseFloat(prompt("Ingese su talla en metros"))
   let total = peso / (talla * talla)
+
   if(total < 25 && total > 18.5){
    diagnostico = "Normopeso"
   }else if(total > 25 && total < 30){
@@ -102,8 +103,20 @@ function eliminar (ev) {
     diagnostico = "Obesidad grado III"
   }
   else{
-    diagnostico = "Lo siento, debe ingresar un peso y talla válidos"
+    diagnostico = ""
   }
+
+  if (diagnostico == ""){
+    Swal.fire({
+      title: "Resultado de tu IMC",
+      text: `Lo siento, debe ingresar un peso y/o talla validos`,
+      imageUrl: "./images/logo.png",
+      imageWidth: 80,
+      imageHeight: 80,
+      imageAlt: 'Logo de Green Garden'
+    })
+  }else{
+
   Swal.fire({
     title: "Resultado de tu IMC",
     text: `Su IMC es de: ${total.toFixed(1)} lo que es equivalente a ${diagnostico}`,
@@ -111,7 +124,7 @@ function eliminar (ev) {
     imageWidth: 80,
     imageHeight: 80,
     imageAlt: 'Logo de Green Garden'
-  })
+  })}
  }
 
  // Evento boton de finalizar compra:
