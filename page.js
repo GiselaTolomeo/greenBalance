@@ -80,13 +80,17 @@ function eliminar (ev) {
 
  //Calculadora de IMC:
 
- const botonImc = document.getElementById("botonImc");
+ const btnImc = document.getElementById("btnImc");
 
- botonImc.addEventListener("click", calcularImc )
+ btnImc.addEventListener("click", calcularImc )
 
  function calcularImc (peso, talla){
-  peso = parseFloat(prompt("Ingese su peso en kiligramos"))
-  talla = parseFloat(prompt("Ingese su talla en metros"))
+
+const inputPeso = document.getElementById("imc-peso")
+const inputTalla = document.getElementById("imc-talla")
+
+  peso = parseFloat(inputPeso.value)
+  talla = parseFloat(inputTalla.value)
   let total = peso / (talla * talla)
 
   if(total < 25 && total > 18.5){
@@ -126,6 +130,57 @@ function eliminar (ev) {
     imageAlt: 'Logo de Green Garden'
   })}
  }
+
+
+
+//Calculadora ORIGINALLLLLL:
+
+//  const botonImc = document.getElementById("botonImc");
+
+//  botonImc.addEventListener("click", calcularImc )
+
+//  function calcularImc (peso, talla){
+//   peso = parseFloat(prompt("Ingese su peso en kiligramos"))
+//   talla = parseFloat(prompt("Ingese su talla en metros"))
+//   let total = peso / (talla * talla)
+
+//   if(total < 25 && total > 18.5){
+//    diagnostico = "Normopeso"
+//   }else if(total > 25 && total < 30){
+//     diagnostico = "Sobrepeso"
+//   }else if(total > 30 && total < 35){
+//     diagnostico = "Obesidad grado I"
+//   }else if(total > 35 && total < 40){
+//     diagnostico = "Obesidad grado II"
+//   }else if(total < 18.5){
+//     diagnostico = "Bajo Peso"
+//   } else if (total < 40){
+//     diagnostico = "Obesidad grado III"
+//   }
+//   else{
+//     diagnostico = ""
+//   }
+
+//   if (diagnostico == ""){
+//     Swal.fire({
+//       title: "Resultado de tu IMC",
+//       text: `Lo siento, debe ingresar un peso y/o talla validos`,
+//       imageUrl: "./images/logo.png",
+//       imageWidth: 80,
+//       imageHeight: 80,
+//       imageAlt: 'Logo de Green Garden'
+//     })
+//   }else{
+
+//   Swal.fire({
+//     title: "Resultado de tu IMC",
+//     text: `Su IMC es de: ${total.toFixed(1)} lo que es equivalente a ${diagnostico}`,
+//     imageUrl: "./images/logo.png",
+//     imageWidth: 80,
+//     imageHeight: 80,
+//     imageAlt: 'Logo de Green Garden'
+//   })}
+//  }
 
  // Evento boton de finalizar compra:
 

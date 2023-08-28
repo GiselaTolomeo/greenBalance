@@ -102,6 +102,10 @@ h5{
 }
 
 
+.container-run {
+    padding-top:80px;
+}
+
 /* SECCION NUTRICION */
 .container-nutri{
 width: 50rem;
@@ -143,6 +147,20 @@ position: relative;
     text-align: justify;
 }
 
+label{
+    font-size: clamp(1rem, 1.6vw, 3rem);
+    color: rgb(9, 114, 212);
+}
+
+input{
+    border-radius: .4rem;
+}
+
+input[placeholder]{
+    margin: 1rem;
+    padding: .3rem;
+}
+
 
 /* CARDS PRODUCTOS  */
 .borrar{
@@ -169,6 +187,7 @@ position: relative;
 
 .contenedor-btn{
     text-align: center;
+    font-size: clamp(1rem, 1.6vw, 3rem);
 }
 
 .btn .botones-general{
