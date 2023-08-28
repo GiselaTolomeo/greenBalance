@@ -157,8 +157,8 @@ input{
 }
 
 input[placeholder]{
-    margin: 1rem;
-    padding: .3rem;
+    margin: 1em;
+    padding: .3em;
 }
 
 
@@ -188,6 +188,10 @@ input[placeholder]{
 .contenedor-btn{
     text-align: center;
     font-size: clamp(1rem, 1.6vw, 3rem);
+    background-color: rgb(223, 220, 220);
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 1rem;
 }
 
 .btn .botones-general{
